@@ -22,43 +22,48 @@ RENAME: This is used to rename an object existing in the database.
 ### 1) Create a table student with the following fieds rollno,name,age,address,phoneno.
 
 ### SQL QUERY: 
- create table students(rollno int,name varchar(20),age int,address varchar(20),phoneno int);
-
+```
+ create table student(rollno int,name varchar(20),age int,address varchar(20),phoneno int);
+```
 ### OUTPUT:
-![image](https://github.com/22009011/I2_DBMS/assets/118343461/c7666b70-aa14-44e5-949e-28c031c41e58)
+![create](https://github.com/Saravana-kumar369/I2_DBMS/assets/117925254/9c95b0bc-ed78-40f7-a3d2-655a460a7511)
+
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
- insert into students values(112,'jk',20,'no40 cuddalore',2543256556);
- insert into students values(110,'thanjiyappan',19,'no 36 vellore',25432564764);
+```
+alter table student add department varchar(10);
+```
 ### OUTPUT:
+![add](https://github.com/Saravana-kumar369/I2_DBMS/assets/117925254/e063ba12-2dd4-457c-b906-c0084f5cdc08)
 
-![image](https://github.com/22009011/I2_DBMS/assets/118343461/e6dbd76b-7ae4-4553-97f1-36586c833fde)
 
 ### 3) Drop the student table
  
 ### SQL QUERY: 
-DROP TABLE students;
-
+```
+drop table student;
+```
 ### OUTPUT:
-![image](https://github.com/22009011/I2_DBMS/assets/118343461/756bcab5-5743-4031-975f-ccf266567bd2)
+![Drop](https://github.com/Saravana-kumar369/I2_DBMS/assets/117925254/4af4cd38-85f1-4729-87e4-c8c564dc0237)
 
 
 ### 4) Delete the student table using truncate keyword
 
 ### SQL QUERY: 
- TRUNCATE TABLE mystudents;
+ truncate table student;
 
 ### OUTPUT:
-![image](https://github.com/22009011/I2_DBMS/assets/118343461/885a7f9e-4a54-468f-87fa-8b20d04c2fa9)
-
+![trun](https://github.com/Saravana-kumar369/I2_DBMS/assets/117925254/8c868fbf-184b-4846-81c8-cceb0079572d)
 
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
- ALTER TABLE student RENAME to mystudents;
-
+```
+rename table student to mystudent;
+```
 ### OUTPUT:
-![image](https://github.com/22009011/I2_DBMS/assets/118343461/320983c9-106d-479d-8d51-4095cc47945a)
+![rename](https://github.com/Saravana-kumar369/I2_DBMS/assets/117925254/e0ac4526-8018-45ec-88b1-dce0ff04f15b)
+
